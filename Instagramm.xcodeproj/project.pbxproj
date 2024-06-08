@@ -11,6 +11,9 @@
 		B464EA4B2C14A19700D25372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464EA4A2C14A19700D25372 /* ContentView.swift */; };
 		B464EA4D2C14A19800D25372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B464EA4C2C14A19800D25372 /* Assets.xcassets */; };
 		B464EA502C14A19800D25372 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B464EA4F2C14A19800D25372 /* Preview Assets.xcassets */; };
+		B464EA582C14B65700D25372 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464EA572C14B65700D25372 /* UIApplication.swift */; };
+		B464EA5E2C14B7FF00D25372 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464EA5D2C14B7FF00D25372 /* SignInViewModel.swift */; };
+		B464EA612C14C57100D25372 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B464EA602C14C57100D25372 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		B464EA4A2C14A19700D25372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B464EA4C2C14A19800D25372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B464EA4F2C14A19800D25372 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B464EA572C14B65700D25372 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		B464EA5D2C14B7FF00D25372 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		B464EA5F2C14C53200D25372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B464EA602C14C57100D25372 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,9 @@
 		B464EA472C14A19700D25372 /* Instagramm */ = {
 			isa = PBXGroup;
 			children = (
+				B464EA5F2C14C53200D25372 /* Info.plist */,
+				B464EA592C14B77C00D25372 /* BusinessLayer */,
+				B464EA5A2C14B78500D25372 /* PresentationLayer */,
 				B464EA482C14A19700D25372 /* InstagrammApp.swift */,
 				B464EA4A2C14A19700D25372 /* ContentView.swift */,
 				B464EA4C2C14A19800D25372 /* Assets.xcassets */,
@@ -65,6 +75,55 @@
 				B464EA4F2C14A19800D25372 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B464EA562C14B63E00D25372 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B464EA572C14B65700D25372 /* UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B464EA592C14B77C00D25372 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B464EA5C2C14B7EC00D25372 /* ViewModels */,
+				B464EA562C14B63E00D25372 /* Extensions */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		B464EA5A2C14B78500D25372 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B464EA622C14C5EA00D25372 /* LaunchScreen */,
+				B464EA5B2C14B7E000D25372 /* Components */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		B464EA5B2C14B7E000D25372 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B464EA5C2C14B7EC00D25372 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B464EA5D2C14B7FF00D25372 /* SignInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B464EA622C14C5EA00D25372 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B464EA602C14C57100D25372 /* Launch Screen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B464EA612C14C57100D25372 /* Launch Screen.storyboard in Resources */,
 				B464EA502C14A19800D25372 /* Preview Assets.xcassets in Resources */,
 				B464EA4D2C14A19800D25372 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B464EA5E2C14B7FF00D25372 /* SignInViewModel.swift in Sources */,
 				B464EA4B2C14A19700D25372 /* ContentView.swift in Sources */,
+				B464EA582C14B65700D25372 /* UIApplication.swift in Sources */,
 				B464EA492C14A19700D25372 /* InstagrammApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +336,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Instagramm/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instagramm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +349,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Instagramm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,11 +369,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Instagramm/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instagramm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +382,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Instagramm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

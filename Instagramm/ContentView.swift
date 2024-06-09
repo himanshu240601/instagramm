@@ -103,6 +103,12 @@ struct ContentView: View {
                             .fontWeight(.medium)
                             .background(.white)
                             .cornerRadius(12)
+                            .overlay {
+                                RoundedRectangle(cornerSize: CGSize(width: 12, height: 12))
+                                    .stroke(lineWidth: 1)
+                                    .foregroundStyle(.gray.opacity(isPasswordFieldFocused ? 1 : 0.5))
+                                    .opacity(signInVM.isPasswordVisible ? 1 : 0)
+                            }
                             .overlay(alignment: .trailing) {
                                 // toggle password button
                                 if !signInVM.password.isEmpty {
